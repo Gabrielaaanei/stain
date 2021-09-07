@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>StaIn</title>
+</head>
+<body>
+<header>
+  <div id="titolo">
+    <a href="../Home/index.html">
+      <h1>stain</h1>
+    </a>
+  </div>
+</header>
+<nav>
+  <div id="menu-click" class="menu-click-closed">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div id="menu" class="menu-closed">
+    <ul>
+      <a href="../Home/index.html"><li>Home</li></a>
+      <a href="../Info/index.html"><li>Info</li></a>
+      <a href="../Inci/index.html"><li>Inci</li></a>
+      <a href="../Aiuto/index.html"><li>Aiuto</li></a>
+    </ul>
+  </div>
+</nav>
+<!-- PRESET -->
+
+<script src="https://kit.fontawesome.com/35fd86ea03.js" crossorigin="anonymous"></script>
+<script>
+  var x = document.getElementById('menu-click')
+  var y = document.getElementById('menu')
+  document.getElementById('menu-click').onclick = function() {
+    x.classList.toggle('menu-click-open');
+    y.classList.toggle('menu-open');
+  }
+</script>
+</body>
+</html>

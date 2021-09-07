@@ -1,0 +1,116 @@
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {height: 100%; overflow: hidden}
+
+header{
+  height: 13vh;
+  background-color: #800000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  background-image: url(work.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+}
+
+a{text-decoration: none; color: inherit;}
+
+#titolo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: #EA899A;
+  cursor: default;
+  text-shadow: 3px 0 0 #F400A1, 0 -1.5px 0 #F400A1, 0 1.5px 0 #F400A1, -1.5px 0 0 #F400A1;
+}
+
+#menu-click{
+font-size: 35px;
+position: absolute;
+left: 20px;
+top: 42px;
+font-family: 'Roboto', sans-serif;
+cursor: pointer;
+z-index: 1;
+}
+
+#menu{
+  height: 100vh;
+  width: 30vh;
+  top: 0;
+  position: absolute;
+  background-color: rgba(255,255,255,0.99);
+  color: black;
+  transition: 0.8s ease-in-out;
+  transition-delay: 0s;
+}
+.menu-closed{
+  left: calc(100vh - 130vh);
+}
+
+.menu-open{
+  left: 0;
+}
+.menu-click-closed{
+  color: white;
+  transition: 1s;
+}
+.menu-click-open{
+  color: black;
+}
+
+#menu ul{
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 135px;
+  left: 20px;
+  list-style: none;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 7px;
+}
+
+#menu ul li{
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#menu ul li:hover{
+  transform: scale(1.2) translateX(7%);
+}
+
+@media only screen and (max-width: 600px) {
+  #titolo{
+    font-size: 25px;
+    position: absolute;
+    margin: auto;
+    transform: translateX(5%);
+  }
+  #menu-click{
+    position: absolute;
+    top: 32px;
+    left: 10px;
+  }
+  #menu{width: 25vh;}
+}
+
+/* PRESET */
